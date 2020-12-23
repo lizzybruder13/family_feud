@@ -20,8 +20,6 @@ const Game = () => {
   // let nextIndex = String(parseInt(index, 10) + 1)
   // let nextHREF = '/game/' + nextIndex
 
- npm 
-
   const useStyles = makeStyles((theme) => ({
     root: {
       flexGrow: 1,
@@ -46,6 +44,10 @@ const Game = () => {
     },
   }))
   const classes = useStyles()
+
+  const changeIndex = () => {
+    setIndex(index + 1)
+  }
 
   const chooseTeam = () => {
     if (team === 1) {
